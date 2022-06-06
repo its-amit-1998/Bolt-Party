@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1089033190041",
+    "project_id": "bolt-party-e315f",
+    "storage_bucket": "bolt-party-e315f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1089033190041:android:82600a0f3166eaa521d608",
+        "android_client_info": {
+          "package_name": "com.example.boltparty"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1089033190041-g89137i26rlda820h4iu0ge7fu027l1f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDSvfw4J4xrUxJ3PM5xqX7I7uE0CDcj_HY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1089033190041-g89137i26rlda820h4iu0ge7fu027l1f.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

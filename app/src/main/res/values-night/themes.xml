@@ -1,0 +1,61 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.BoltParty" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/primary1</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/black</item>
+
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/primary1</item>
+        <item name="colorSecondaryVariant">@color/teal_200</item>
+        <item name="colorOnSecondary">@color/black</item>
+
+        <!-- Background Color -->
+        <item name="android:windowBackground">@color/white</item>
+
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">#c3484f</item>
+
+        <!-- To Style ActionBar -->
+        <item name="actionBarStyle">@style/BackgroundColor</item>
+
+        <!-- Customize your theme here. -->
+        <item name="materialButtonStyle">@style/BoltPartyButton</item>
+        <item name="colorControlNormal">@color/primary1</item>
+    </style>
+
+    <style name="Splashscreen" parent="Theme.MaterialComponents.NoActionBar">
+        <item name="android:statusBarColor" tools:targetApi="l">#c73e40</item>
+        <item name="android:background">#c73e40</item>
+    </style>
+
+    <style name="MapScreen" parent="Theme.MaterialComponents.NoActionBar">
+        <item name="android:background">#c73e40</item>
+    </style>
+
+    <style name="BackgroundColor"  parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <item name="background">@color/primary1</item>
+<!--        <item name="android:textColor">#f0efee</item>-->
+    </style>
+
+    <style name="BoltPartyButton" parent="Widget.MaterialComponents.Button">
+        <item name="background">@color/primary1</item>
+    </style>
+
+    <style name="Small.AppCompatRatingBar" parent="Base.Widget.AppCompat.RatingBar.Small">
+        <item name="colorControlNormal">@color/grey_60</item>
+        <item name="colorControlActivated">@color/primary1</item>
+    </style>
+
+    <style name="NumberPickerTextColor" parent="Theme.BoltParty">
+        <item name="android:textColorPrimary">@color/black</item>
+    </style>
+
+    <style name="ActionBarTheme" parent="Theme.BoltParty">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+</resources>

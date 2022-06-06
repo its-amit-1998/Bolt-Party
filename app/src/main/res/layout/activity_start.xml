@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary1"
+    tools:context=".StartActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="4">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/content_layout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:background="@drawable/view_bg"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtUsername"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="80dp"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="@dimen/spacing_mlarge"
+                android:layout_weight="2"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_booking"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:text="Booking"
+                    android:textAllCaps="false"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.892"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:shapeAppearanceOverlay="@style/RoundedSquare"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteY="@dimen/spacing_mxxlarge" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_Profile"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:text="Profile"
+                    android:textAllCaps="false"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.103"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:shapeAppearanceOverlay="@style/RoundedSquare"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteY="@dimen/spacing_mxxlarge" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_favorite"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:text="Favorite"
+                    android:textAllCaps="false"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.9"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:shapeAppearanceOverlay="@style/RoundedSquare"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteY="-8dp" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_booking_details"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:text="Booking Details"
+                    android:textAllCaps="false"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.111"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:shapeAppearanceOverlay="@style/RoundedSquare"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteY="-8dp" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/profile_img"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:layout_anchor="@id/content_layout"
+        app:layout_anchorGravity="center_horizontal"
+        app:shapeAppearanceOverlay="@style/Circular" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
